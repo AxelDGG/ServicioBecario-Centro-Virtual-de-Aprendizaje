@@ -28,6 +28,23 @@
             .card-hover:hover{
                 cursor:pointer;
             }
+            .mouse-type-card {
+                height: 100%;
+                min-height: 230px;
+            }
+            .card-group .mouse-type-card .card-img-top.mouse-type-img {
+                width: auto !important;
+                height: 140px !important;
+                max-width: 100%;
+                object-fit: fill !important;
+                display: block;
+                margin: 0 auto;
+            }
+            .mouse-type-card .card-body {
+                min-height: 90px;
+                display: flex;
+                align-items: center;
+            }
         </style>
 
     </head>
@@ -83,35 +100,42 @@
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane fade in active show" id="tab-centered-1">
                                                 <div class="pdd-horizon-15 pdd-vertical-20">
-                                                    <div align="center" style="padding-bottom: 20px;">
-                                                        <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/teclado_1.jpg" alt="" width="642" height="172">
+                                                    <div class="row align-items-center mrg-btm-15">
+                                                        <div class="col-12 col-md-5 mrg-btm-15">
+                                                            <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/teclado_1.jpg" alt="Teclado" class="img-fluid w-100" style="border-radius:4px;">
+                                                        </div>
+                                                        <div class="col-12 col-md-7">
+                                                            <p>
+                                                                <b>Teclado</b>: Es el <b>dispositivo de entrada principal</b>, mediante el cual se introduce datos e instrucciones a la computadora.
+                                                            </p>
+                                                            <p>
+                                                                El teclado de la computadora es similar al de una máquina de escribir; maneja cuatro tipos de teclas:
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <p>
-                                                        <b>Teclado</b>: Es el <b>dispositivo de entrada principal</b>, mediante el cual se introduce datos e instrucciones a la computadora.
-                                                    </p>
-                                                    <p>
-                                                        El teclado de la computadora es similar al de una máquina de escribir; maneja cuatro tipos de teclas:
-                                                    </p>
-                                                    <div align="center">
-                                                        <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/teclado_2.jpg" alt="" width="350" height="180">
+                                                    <div class="text-center">
+                                                        <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/teclado_2.jpg" alt="Tipos de teclas" class="img-fluid" style="border-radius:4px; max-width:350px;">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="tab-centered-2">
                                                 <div class="pdd-horizon-15 pdd-vertical-20">
-                                                    <div align="center" style="padding-bottom: 20px;">
-                                                        <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_1.jpg" alt="" width="642" height="172">
+                                                    <div class="row align-items-center mrg-btm-15">
+                                                        <div class="col-12 col-md-5 mrg-btm-15">
+                                                            <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_1.jpg" alt="Mouse" class="img-fluid w-100" style="border-radius:4px;">
+                                                        </div>
+                                                        <div class="col-12 col-md-7">
+                                                            <p>
+                                                                <b>Mouse o ratón</b>: Es el <b>segundo dispositivo de entrada</b> más utilizado. El ratón fue diseñado para facilitar el manejo del teclado.
+                                                            </p>
+                                                            <p>
+                                                                El mouse o ratón se activa al deslizarlo sobre una superficie plana a la vez que despliega un apuntador (cursor) en la pantalla del monitor. El movimiento del apuntador está controlado por el movimiento del ratón, es decir, que se mueven en la misma dirección.
+                                                            </p>
+                                                            <p>
+                                                                Se le da el nombre de ratón (o mouse en inglés) porque su forma ovalada se asemeja al cuerpo de un ratón. Existen diferentes tipos de mouse.
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <p>
-                                                        <b>Mouse o ratón</b>: Es el <b>segundo dispositivo de entrada</b> más utilizado. El ratón fue diseñado para facilitar el manejo del teclado.
-
-                                                    </p>
-                                                    <p>
-                                                        El mouse o ratón se activa al deslizarlo sobre una superficie plana a la vez que despliega un apuntador (cursor) en la pantalla del monitor. El movimiento del apuntador está controlado por el movimiento del ratón, es decir, que se mueven en la misma dirección.
-                                                    </p>
-                                                    <p>
-                                                        Se le da el nombre de ratón (o mouse en inglés) porque su forma ovalada se asemeja al cuerpo de un ratón. Existen diferentes tipos de mouse. 
-                                                    </p>
                                                     <!-- Tipos de componentes-->
                                                     <div class="row">
                                                         <div class=col>
@@ -120,42 +144,50 @@
                                                                     <div class="col-lg-1"></div>
                                                                     <div class="card-group">
                                                                     <div class="col-lg-2 col-md-6 col-sm-12" onclick="showModal(1)">
-                                                                        <div class="card card-hover">
-                                                                            <img class="card-img-top" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_optico.jpg" alt="Card image cap">
+                                                                        <div class="card card-hover mouse-type-card">
+                                                                            <img class="card-img-top mouse-type-img" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_optico.jpg" alt="Card image cap">
                                                                             <div class="card-body">
                                                                                 <h5 class="card-title">Ópticos</h5>
                                                                             </div>
                                                                             </div>
                                                                     </div>
                                                                     <div class="col-lg-2 col-md-6 col-sm-12" onclick="showModal(2)">
-                                                                        <div class="card card-hover">
-                                                                            <img class="card-img-top" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse-wireless.png" alt="Card image cap">
+                                                                        <div class="card card-hover mouse-type-card">
+                                                                            <img class="card-img-top mouse-type-img" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_USB.jpg" alt="Mouse USB">
                                                                             <div class="card-body">
-                                                                                <h5 class="card-title">Inalámbricos</h5>
+                                                                                <h5 class="card-title">Mouse USB</h5>
                                                                             </div>
                                                                             </div>
                                                                     </div>
                                                                     <div class="col-lg-2 col-md-6 col-sm-12" onclick="showModal(3)">
-                                                                        <div class="card card-hover">
-                                                                            <img class="card-img-top" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_bola.jpg" alt="Card image cap">
+                                                                        <div class="card card-hover mouse-type-card">
+                                                                            <img class="card-img-top mouse-type-img" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_bola.jpg" alt="Card image cap">
                                                                             <div class="card-body">
                                                                                 <h5 class="card-title">Bola táctil</h5>
                                                                             </div>
                                                                             </div>
                                                                     </div>
                                                                     <div class="col-lg-2 col-md-6 col-sm-12" onclick="showModal(4)">
-                                                                        <div class="card card-hover">
-                                                                            <img class="card-img-top" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_puntero.jpg" alt="Card image cap">
+                                                                        <div class="card card-hover mouse-type-card">
+                                                                            <img class="card-img-top mouse-type-img" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_puntero.jpg" alt="Card image cap">
                                                                             <div class="card-body">
                                                                                 <h5 class="card-title">Puntero táctil</h5>
                                                                             </div>
                                                                             </div>
                                                                     </div>
                                                                     <div class="col-lg-2 col-md-6 col-sm-12" onclick="showModal(5)">
-                                                                        <div class="card card-hover">
-                                                                            <img class="card-img-top" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_almohada.jpg" alt="Card image cap">
+                                                                        <div class="card card-hover mouse-type-card">
+                                                                            <img class="card-img-top mouse-type-img" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_almohada.jpg" alt="Card image cap">
                                                                             <div class="card-body">
                                                                                 <h5 class="card-title">Almohadilla táctil</h5>
+                                                                            </div>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="col-lg-2 col-md-6 col-sm-12" onclick="showModal(6)">
+                                                                        <div class="card card-hover mouse-type-card">
+                                                                            <img class="card-img-top mouse-type-img" src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/mouse_bluetooth.png" alt="Mouse Bluetooth">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title">Mouse Bluetooth</h5>
                                                                             </div>
                                                                             </div>
                                                                     </div>
@@ -168,54 +200,70 @@
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="tab-centered-3">
                                                 <div class="pdd-horizon-15 pdd-vertical-20">
-                                                    <div align="center" style="padding-bottom: 20px;">
-                                                        <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/escaner_1.jpg" alt="" width="642" height="172">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-12 col-md-5 mrg-btm-15">
+                                                            <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/escaner_1.jpg" alt="Escáner" class="img-fluid w-100" style="border-radius:4px;">
+                                                        </div>
+                                                        <div class="col-12 col-md-7">
+                                                            <p>
+                                                                <b>Escáner</b>: Es un dispositivo semejante a una fotocopiadora, pero en lugar de copiar en papel la imagen, la información se transforma en un documento electrónico y lo deja en la computadora.
+                                                            </p>
+                                                            <p>
+                                                                Fotografías, anuncios, revistas, texto y/o cualquier publicidad impresa puede ser capturada o introducida en la computadora a través de un escáner.
+                                                            </p>
+                                                            <p>
+                                                                Un escáner requiere de un software especial para funcionar y poder modificar las imágenes capturadas.
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <p>
-                                                        <b>Escáner</b>: Es un dispositivo semejante a una fotocopiadora, pero en lugar de copiar en papel la imagen, la información se transforma en un documento electrónico y lo deja en la computadora.
-                                                    </p>
-                                                    <p>
-                                                        Fotografías, anuncios, revistas, texto y/o cualquier publicidad impresa puede ser capturada o introducida en la computadora a través de un escáner.
-                                                    </p>
-                                                    <p>
-                                                        Un escáner requiere de un software especial para funcionar y poder modificar las imágenes capturadas.
-                                                    </p>
                                                 </div>
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="tab-centered-4">
                                                 <div class="pdd-horizon-15 pdd-vertical-20">
-                                                    <div align="center" style="padding-bottom: 20px;">
-                                                        <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/microfono_1.jpg" alt="" width="642" height="172">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-12 col-md-5 mrg-btm-15">
+                                                            <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/microfono_1.jpg" alt="Micrófono" class="img-fluid w-100" style="border-radius:4px;">
+                                                        </div>
+                                                        <div class="col-12 col-md-7">
+                                                            <p>
+                                                                <b>Micrófono</b>: Es un dispositivo o parte de la computadora por el cual transmite sonidos que la computadora capta, reproduce y graba.
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <p>
-                                                        <b>Micrófono</b>: Es un dispositivo o parte de la computadora por el cual transmite sonidos que la computadora capta, reproduce y graba.
-                                                    </p>
                                                 </div>
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="tab-centered-5">
                                                 <div class="pdd-horizon-15 pdd-vertical-20">
-                                                    <div align="center" style="padding-bottom: 20px;">
-                                                        <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/camara_1.jpg" alt="" width="642" height="172">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-12 col-md-5 mrg-btm-15">
+                                                            <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/camara_1.jpg" alt="Cámara Web" class="img-fluid w-100" style="border-radius:4px;">
+                                                        </div>
+                                                        <div class="col-12 col-md-7">
+                                                            <p>
+                                                                <b>Cámara Web (webcams)</b>: Es una cámara de pequeñas dimensiones. Tiene que estar conectada a la computadora para poder funcionar. Su uso generalmente es para conferencias trasmitidas por Internet que reciben el nombre de videoconferencias, pero mediante del software adecuado, se pueden grabar videos como una cámara normal y tomar fotos estáticas.
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <p>
-                                                        <b>Cámara Web (webcams)</b>: Es una cámara de pequeñas dimensiones. Tiene que estar conectada a la computadora para poder funcionar. Su uso generalmente es para conferencias trasmitidas por Internet que reciben el nombre de videoconferencias, pero mediante del software adecuado, se pueden grabar videos como una cámara normal y tomar fotos estáticas.
-                                                    </p>
                                                 </div>
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="tab-centered-6">
                                                 <div class="pdd-horizon-15 pdd-vertical-20">
-                                                    <div align="center" style="padding-bottom: 20px;">
-                                                        <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/bluetooth_1.jpg" alt="" width="642" height="172">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-12 col-md-5 mrg-btm-15">
+                                                            <img src="../../assets/images/course/modulo1/la-computadora-y-sus-componentes/bluetooth_1.jpg" alt="Infrarrojo y Bluetooth" class="img-fluid w-100" style="border-radius:4px;">
+                                                        </div>
+                                                        <div class="col-12 col-md-7">
+                                                            <p>
+                                                                <b>Puertos Infrarrojo y Bluetooth</b>: Se consideran dispositivos o partes de entrada y salida de datos, ya que a través de ellos se puede recibir información y sacar información ya procesada. Estos puertos los encontramos en las computadoras portátiles y en celulares.
+                                                            </p>
+                                                            <p>
+                                                                <b>Infrarrojo</b>: Es un dispositivo de comunicación simple que usa un pequeño foco rojo de transmisión por lo general en forma lineal, un sistema como el manejado por los controles remotos.
+                                                            </p>
+                                                            <p>
+                                                                <b>Bluetooth</b>: Es un dispositivo más complicado de comunicación, parecido a la tecnología inalámbrica; el alcance es de mayor rango manejando un área circular y con una rapidez de transmisión, más rápida que el puerto infrarrojo. Se ven más en dispositivos de almacenamiento, estos sólo trasmiten.
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <p>
-                                                        <b>Puertos Infrarrojo y Bluetooth</b>: Se consideran dispositivos o partes de entrada y salida de datos, ya que a través de ellos se puede recibir información y sacar información ya procesada. Estos puertos los encontramos en las computadoras portátiles y en celulares.
-                                                    </p>
-                                                    <p>
-                                                        <b>Infrarrojo</b>: Es un dispositivo de comunicación simple que usa un pequeño foco rojo de transmisión por lo general en forma lineal, un sistema como el manejado por los controles remotos.
-                                                    </p>
-                                                    <p>
-                                                        <b>Bluetooth</b>: Es un dispositivo más complicado de comunicación, parecido a la tecnología inalámbrica; el alcance es de mayor rango manejando un área circular y con una rapidez de transmisión, más rápida que el puerto infrarrojo. Se ven más en dispositivos de almacenamiento, estos sólo trasmiten.
-                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -304,12 +352,30 @@
                             <!-- Modal content-->
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h2 class="modal-title align-self-center">Mouse inalámbrico</h2>
+                                    <h2 class="modal-title align-self-center">Mouse USB</h2>
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
                                     <h5>
-                                        No utiliza cables de conexión con la computadora. Sólo utiliza un receptor que se conecta a la computadora generalmente por un puerto USB; en este receptor se da el punto de concentración de la señal inalámbrica que es producida por el ratón; gracias a esta señal es que reconoce cualquier movimiento del mismo. Su uso se amolda especialmente para las computadoras portátiles y cuando no hay mucho espacio para su traslado.
+                                        El mouse USB se conecta por cable a un puerto USB de la computadora. Es fácil de instalar, ofrece una conexión estable y no necesita baterías, por lo que es una opción práctica para uso diario.
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside>
+                    <!-- Modal for Mouse Bluetooth-->
+                    <div class="modal fade" id="blue" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title align-self-center">Mouse Bluetooth</h2>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        El mouse Bluetooth se conecta de forma inalámbrica sin receptor USB adicional en la mayoría de equipos compatibles. Es ideal para mantener el espacio de trabajo limpio y facilitar la movilidad.
                                     </h5>
                                 </div>
                             </div>
@@ -428,6 +494,9 @@
                         break;
                     case 5:
                         $('#almo').modal({ show: true });
+                        break;
+                    case 6:
+                        $('#blue').modal({ show: true });
                         break;
                 }
 

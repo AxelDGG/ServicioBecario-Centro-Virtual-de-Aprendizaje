@@ -20,14 +20,14 @@
   --theme-color: #093b8b;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
 html, html a, body { -webkit-font-smoothing: antialiased; }
 
-body { font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 14px; background-color: #f6f7fb; color: #888da8; line-height: 1.5; letter-spacing: 0.2px; overflow-x: hidden; }
+body { font-family: 'Lato', sans-serif; font-size: 14px; background-color: #f6f7fb; color: #888da8; line-height: 1.5; letter-spacing: 0.2px; overflow-x: hidden; }
 
-h1, h2, h3, h4, h5, h6 { color: #000000; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: 0.5px; font-weight: normal; line-height: 1.5; }
+h1, h2, h3, h4, h5, h6 { color: #000000; font-family: 'Fira Sans', sans-serif; letter-spacing: 0.5px; font-weight: normal; line-height: 1.5; }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-family: 'Fira Sans', sans-serif; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-weight: 300; color: #5c5f73; }
 
@@ -45,9 +45,11 @@ h5 { font-size: 16px; }
 
 h6 { font-size: 12px; }
 
-p, li { font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #000000; line-height: 1.9; font-size: 18px }
+p, li { font-family: 'Lato', sans-serif; color: #000000; line-height: 1.9; font-size: 16px; }
 
-label { font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #000000; line-height: 1.9; font-size: 16px }
+@media (min-width: 576px) { p, li { font-size: 18px; } }
+
+label { font-family: 'Lato', sans-serif; color: #000000; line-height: 1.9; font-size: 16px; }
 
 .image-auto-size {max-height: 100%; max-width: 100%}
 
@@ -1477,8 +1479,8 @@ iframe { border: 0; }
 @media only screen and (min-width: 992px) and (max-width: 1440px) { .side-nav { width: 70px; }
   .side-nav .side-nav-inner .side-nav-logo { border-bottom: 1px solid transparent; padding: 0px; }
   .side-nav .side-nav-inner .side-nav-logo a .logo { width: 70px; background-position: center center; }
-  .side-nav .side-nav-inner .side-nav-logo a .logo-dark { background-image: url("../images/logo/logo-NoBackground.png") !important; background-size: 65% !important; background-position: center !important; }
-  .side-nav .side-nav-inner .side-nav-logo a .logo-white { background-image: url("../images/logo/logo-NoBackground.png") !important; background-size: 65% !important; background-position: center !important; }
+  .side-nav .side-nav-inner .side-nav-logo a .logo-dark { background-image: url("../images/logo/logo-sm.png") !important; }
+  .side-nav .side-nav-inner .side-nav-logo a .logo-white { background-image: url("../images/logo/logo-white-sm.png") !important; }
   .side-nav .side-nav-inner .side-nav-menu { overflow-x: hidden; }
   .side-nav .side-nav-inner .side-nav-menu > li > a .title { display: none; }
   .side-nav .side-nav-inner .side-nav-menu li.dropdown .arrow { opacity: 0; }
@@ -1486,8 +1488,8 @@ iframe { border: 0; }
   .side-nav:hover { width: 280px; }
   .side-nav:hover .side-nav-inner .side-nav-logo { padding: 0px 20px; border-bottom: 1px solid #e6ecf5; }
   .side-nav:hover .side-nav-inner .side-nav-logo a .logo { width: 150px; background-position: center left; }
-  .side-nav:hover .side-nav-inner .side-nav-logo a .logo-dark { background-image: url("../images/logo/logo.png") !important; background-size: contain !important; }
-  .side-nav:hover .side-nav-inner .side-nav-logo a .logo-white { background-image: url("../images/logo/logo-white.png") !important; background-size: contain !important; }
+  .side-nav:hover .side-nav-inner .side-nav-logo a .logo-dark { background-image: url("../images/logo/logo.png") !important; }
+  .side-nav:hover .side-nav-inner .side-nav-logo a .logo-white { background-image: url("../images/logo/logo-white.png") !important; }
   .side-nav:hover .side-nav-inner .side-nav-menu > li > a .title { display: inline-block; }
   .side-nav:hover .side-nav-inner .side-nav-menu li.dropdown .arrow { opacity: 1; }
   .side-nav:hover .side-nav-inner .side-nav-menu li.open > ul.dropdown-menu { display: block !important; } }
@@ -1497,8 +1499,8 @@ iframe { border: 0; }
 @media only screen and (min-width: 1440px) { .is-collapsed .side-nav { width: 70px; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-logo { border-bottom: 1px solid transparent; padding: 0px; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo { width: 70px; background-position: center center; }
-  .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo-dark { background-image: url("../images/logo/logo-NoBackground.png") !important; background-size: 65% !important; background-position: center !important; }
-  .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo-white { background-image: url("../images/logo/logo-NoBackground.png") !important; background-size: 65% !important; background-position: center !important; }
+  .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo-dark { background-image: url("../images/logo/logo-sm.png") !important; }
+  .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo-white { background-image: url("../images/logo/logo-white-sm.png") !important; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-menu { overflow-x: hidden; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-menu > li > a .title { display: none; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-menu li.dropdown .arrow { opacity: 0; }
@@ -1506,8 +1508,8 @@ iframe { border: 0; }
   .is-collapsed .side-nav:hover { width: 280px; }
   .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo { padding: 0px 20px; border-bottom: 1px solid #e6ecf5; }
   .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo a .logo { width: 150px; background-position: center left; }
-  .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo a .logo-dark { background-image: url("../images/logo/logo.png") !important; background-size: contain !important; }
-  .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo a .logo-white { background-image: url("../images/logo/logo-white.png") !important; background-size: contain !important; }
+  .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo a .logo-dark { background-image: url("../images/logo/logo.png") !important; }
+  .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo a .logo-white { background-image: url("../images/logo/logo-white.png") !important; }
   .is-collapsed .side-nav:hover .side-nav-inner .side-nav-menu > li > a .title { display: inline-block; }
   .is-collapsed .side-nav:hover .side-nav-inner .side-nav-menu li.dropdown .arrow { opacity: 1; }
   .is-collapsed .side-nav:hover .side-nav-inner .side-nav-menu li.open > ul.dropdown-menu { display: block !important; } }
@@ -1515,8 +1517,8 @@ iframe { border: 0; }
 @media only screen and (min-width: 992px) and (max-width: 1440px) { .is-collapsed .side-nav { width: 280px; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-logo { padding: 0px 20px; border-bottom: 1px solid #e6ecf5; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo { width: 150px; background-position: center left; }
-  .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo-dark { background-image: url("../images/logo/logo.png") !important; background-size: contain !important; }
-  .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo-white { background-image: url("../images/logo/logo-white.png") !important; background-size: contain !important; }
+  .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo-dark { background-image: url("../images/logo/logo.png") !important; }
+  .is-collapsed .side-nav .side-nav-inner .side-nav-logo > a .logo-white { background-image: url("../images/logo/logo-white.png") !important; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-menu > li > a .title { display: inline-block; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-menu li.dropdown .arrow { opacity: 1; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-menu li.open > ul.dropdown-menu { display: block !important; } }
@@ -3652,43 +3654,30 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
 .draggable-item { cursor: move; cursor: grab; cursor: -moz-grab; cursor: -webkit-grab; }
 
 .button {
-	box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 2px solid #e74c3c;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: #ffffff;
+  border: 2px solid var(--theme-color);
   border-radius: 0.6em;
-  color: #e74c3c;
+  color: var(--theme-color);
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1;
-  margin: 20px;
+  margin: 20px auto;
   padding: 1.2em 2.8em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-
-  border-color: var(--theme-color);
-  color: #fff;
-  box-shadow: 0 0 40px 40px var(--theme-color) inset, 0 0 0 0 var(--theme-color);
-  -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
-
   display: table;
-  margin: 0 auto
 }
 .button:hover {
-  box-shadow: 0 0 10px 0 var(--theme-color) inset, 0 0 10px 4px var(--theme-color);
-  color: var(--theme-color);
+  background-color: var(--theme-color);
+  color: #ffffff;
 }
 
 
@@ -3779,6 +3768,36 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
   background-color: var(--theme-color);
   border-color: var(--theme-color);
   color: #ffffff;
+  /* Mismo tamaño que .btn-default para consistencia */
+  box-sizing: border-box;
+  padding: 6px 12px;
+  min-width: 36px;
+  min-height: 36px;
+  line-height: 1.42857143;
+  vertical-align: middle;
+}
+
+/* Evitar que el estado :active cambie el tamaño visualmente */
+.btn-actual-page:active,
+.btn-actual-page:focus,
+.btn-group .btn-actual-page:active,
+.btn-group .btn-actual-page:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  transform: none !important;
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+  color: #ffffff !important;
+  padding: 6px 12px !important;
+}
+
+/* En mobile: mismo tamaño compacto que el resto del btn-group */
+@media only screen and (max-width: 767px) {
+  .btn-group .btn-actual-page:active,
+  .btn-group .btn-actual-page:focus {
+    padding: 6px 8px !important;
+    font-size: 12px !important;
+  }
 }
 
 .btn-actual-page span {
@@ -3790,3 +3809,400 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
 
 /*-- Para los botones de creditos --*/
 .btn-credits { background-color: var(--theme-color); border-color: var(--theme-color); color: #ffffff; }
+
+
+/*----------------------------
+--------- 3. Responsive Mobile (CVA) ---------
+----------------------------*/
+
+/*
+ * Sección de ajustes responsivos para mobile.
+ * Se aplican estilos globales para garantizar consistencia visual
+ * en pantallas pequeñas (≤ 767px) y medianas (≤ 992px).
+ */
+
+/* ---- Margen general de contenido consistente ---- */
+.page-container .main-content {
+  padding: 95px 20px 20px 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .page-container .main-content {
+    padding: 80px 12px 12px 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page-container .main-content {
+    padding: 75px 12px 16px 12px;
+  }
+}
+
+/* ---- Tipografía responsiva ---- */
+@media only screen and (max-width: 767px) {
+  h1 { font-size: 20px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  h4 { font-size: 15px; }
+  h5 { font-size: 14px; }
+  h6 { font-size: 12px; }
+
+  p, li {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+}
+
+/* ---- Botón de acción principal (.button) en mobile ---- */
+@media only screen and (max-width: 767px) {
+  .button {
+    display: block;
+    width: calc(100% - 24px);
+    max-width: 340px;
+    margin: 12px auto;
+    padding: 0.9em 1.5em;
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* ---- Botones de navegación (.btn-group) → una sola fila compacta en mobile ---- */
+@media only screen and (max-width: 767px) {
+  .btn-group {
+    display: flex;
+    flex-wrap: nowrap;        /* siempre en una sola fila */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;         /* scroll si no caben */
+    -webkit-overflow-scrolling: touch;
+    gap: 0;
+  }
+
+  .btn-group .btn,
+  .btn-group .btn-default,
+  .btn-group .btn-actual-page {
+    flex: 0 0 auto;           /* no crecer ni comprimir */
+    min-width: 0;
+    padding: 6px 8px;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+/* ---- Ajuste tamaño mínimo de botones btn-default en general ---- */
+.btn-default {
+  min-width: 36px;
+  min-height: 36px;
+  padding: 6px 12px;
+}
+
+@media only screen and (max-width: 767px) {
+  .btn-default {
+    min-height: 40px;
+    font-size: 14px;
+  }
+}
+
+/* ---- widget-feed padding responsivo ---- */
+@media only screen and (max-width: 767px) {
+  .widget-feed {
+    padding: 15px 12px;
+  }
+}
+
+/* ---- Cards con padding consistente ---- */
+@media only screen and (max-width: 767px) {
+  .pdd-vertical-15.pdd-horizon-25,
+  .pdd-horizon-25 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .card-block {
+    padding: 15px 12px;
+  }
+
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* ---- container-fluid sin desbordamiento lateral ---- */
+@media only screen and (max-width: 767px) {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* ---- Imágenes responsivas ---- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---- Iframes responsivos ---- */
+@media only screen and (max-width: 767px) {
+  iframe {
+    width: 100% !important;
+    min-height: 200px !important;
+    height: auto !important;
+  }
+}
+
+/* ---- Radio buttons y formularios de quiz ---- */
+@media only screen and (max-width: 767px) {
+  .radio-inline {
+    display: block;
+    margin-bottom: 6px;
+    padding: 4px 0;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-horizontal .control-label {
+    font-size: 15px;
+  }
+}
+
+/* ---- Navegación de páginas numeradas (row con btn-group) ---- */
+@media only screen and (max-width: 767px) {
+  .row.mrg-btm-20 > .col.text-center {
+    padding: 0 4px;
+  }
+}
+
+/* ---- progress bar responsivo ---- */
+@media only screen and (max-width: 767px) {
+  .progress {
+    height: 16px !important;
+    font-size: 11px;
+  }
+
+  #circlecontainer {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+}
+
+/* ---- Sidebar / side-nav no se superpone al contenido ppal en mobile ---- */
+@media only screen and (max-width: 992px) {
+  .side-nav {
+    z-index: 1050;
+  }
+}
+
+/* ---- Footer responsivo ---- */
+@media only screen and (max-width: 767px) {
+  .content-footer {
+    padding: 0 12px;
+  }
+
+  .content-footer .footer .go-right {
+    float: none;
+    display: block;
+    margin-top: 6px;
+  }
+}
+
+/* ---- Overflow seguro en todo el sitio ---- */
+html, body {
+  overflow-x: hidden;
+}
+
+
+/*----------------------------
+--------- 4. Imágenes y Videos Responsivos (CVA) ---------
+----------------------------*/
+
+/*
+ * IMPORTANTE: Los atributos HTML width y height en <img> y <video>
+ * son tratados como presentacionales y pueden ser sobreescritos con CSS.
+ * Se usa !important para asegurar que el CSS tome precedencia sobre
+ * los valores hardcodeados en el HTML.
+ */
+
+/* ---- Imágenes: nunca sobresalir de su contenedor ---- */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Excepción: imágenes inline dentro de texto (iconos pequeños 16x16, etc.) */
+p img,
+li img,
+td img {
+  display: inline;
+  vertical-align: middle;
+}
+
+/* ---- Videos: nunca sobresalir, mantener aspecto ---- */
+video {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ---- Iframes (YouTube, etc.): contenedor responsivo con aspect ratio ---- */
+.video-responsive-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Iframes sin wrapper: al menos que sean responsivos horizontalmente */
+iframe:not(.video-responsive-wrapper iframe) {
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* ---- Tablas: no desbordarse, scroll horizontal si es necesario ---- */
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Las tablas con style="width:X%" se hacen 100% en mobile */
+  table[style*="width"] {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Scroll horizontal en tablas que no caben */
+  .card-block table,
+  .main-content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  /* Excepción: tablas de layout (radio buttons en quizzes) */
+  .form-horizontal table {
+    display: table;
+    white-space: normal;
+    overflow-x: visible;
+  }
+}
+
+/* ---- Contenedores de imagen: nunca desbordarse ---- */
+.card img,
+.card-block img,
+.main-content img,
+.widget-feed img,
+.container-fluid img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* ---- Videos en tarjetas: centrados y responsivos ---- */
+.card video,
+.card-block video,
+.main-content video,
+.widget-feed video,
+.container-fluid video {
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 8px auto;
+}
+
+/* ---- Mobile: ajustes adicionales para garantizar contención ---- */
+@media only screen and (max-width: 767px) {
+  /* Imágenes con width hardcodeado mayor que la pantalla */
+  img[width] {
+    max-width: 100% !important;
+    height: auto !important;
+    width: auto !important;
+  }
+
+  /* Videos con dimensiones hardcodeadas */
+  video[width],
+  video[height] {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Iframes con dimensiones fijas */
+  iframe[width],
+  iframe[height] {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 200px;
+  }
+}
+
+/* ---- Videos: siempre respetar relación de aspecto ---- */
+/* Como CSS attr() no funciona directamente en aspect-ratio,
+   se garantiza que height:auto sea suficiente para la mayoría de videos */
+video {
+  object-fit: contain;
+}
+
+/* Para videos en contenedor de ancho conocido, preservar relación aspect */
+@media only screen and (max-width: 767px) {
+  video[width][height] {
+    /* height:auto + max-width:100% preserva proporción correctamente */
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* ---- Imágenes de contenido del curso: margen y centrado ---- */
+.card-block > p > img,
+.card-block > img {
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-block > p > img,
+  .card-block > img {
+    margin: 8px auto;
+  }
+
+  /* Contenedor de imagen que podría tener scroll horizontal */
+  .image-scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+

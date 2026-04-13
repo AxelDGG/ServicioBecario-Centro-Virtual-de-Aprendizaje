@@ -27,18 +27,16 @@ $(document).ready(function(){
                 $(this).prop("href", getPath()+_href);
             }
         });
-        $("div#sideNav > div > div.side-nav-logo > a > div.logo-dark").each(function(){
+        $("div#sideNav > div > div.side-nav-logo > a > div.logo").each(function(){
             $(this).css("background-image","url("+getPath()+"assets/images/logo/logo.png)");
-        });
-        $("div#sideNav > div > div.side-nav-logo > a > div.logo-white").each(function(){
-            $(this).css("background-image","url("+getPath()+"assets/images/logo/logo-white.png)");
         });
     });
     $.get(getPath()+"assets/js/recycled/footer.html", function(html_string){
-        $("footer.content-footer").html(html_string); 
+        $("footer.content-footer").html(html_string);
+        $("footer.content-footer .footer-year").text(new Date().getFullYear());
         $("footer.content-footer a").each(function() {
-            
-            var _href = this.getAttribute("href"); 
+
+            var _href = this.getAttribute("href");
             if( typeof(_href) != 'undefined' && _href!="" && _href.search(".html")!=-1){
                 $(this).prop("href", getPath()+_href);
             }
@@ -55,8 +53,11 @@ $(document).ready(function(){
         });
         $("div.header.navbar img").each(function() {
             var _href = this.getAttribute("src"); 
-            if( typeof(_href) != 'undefined' && _href!="" && _href.search("assets/images/")!=-1){
-                $(this).prop("src", getPath()+_href);
+            // Fix any path that contains "assets/" and is not absolute
+            if( typeof(_href) != 'undefined' && _href!="" && _href.search("assets/")!=-1 && _href.search("http")==-1){
+                // Remove existing relative markers to avoid double-prepending
+                var cleanPath = _href.split("assets/").pop();
+                $(this).attr("src", getPath() + "assets/" + cleanPath);
             }
         });
     });

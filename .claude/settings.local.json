@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.cca.org.mx)",
+      "Bash(find . -name \"*.html\" -exec sed -i 's/México, 2026\\\\./México, 2025./g' {} \\\\;)",
+      "Bash(find . -name \"*.html\" -exec sed -i 's|href=\"http://www.cca.org.mx/DED_Avisos/CCA_Aviso_Legal.pdf\"|href=\"https://tec.mx/es/politicas-de-privacidad-del-tecnologico-de-monterrey\"|g' {} \\\\;)",
+      "Bash(find . -name \"*.html\" -exec sed -i 's|México, <span id=\"footer-year-static\"></span>.<script>document.getElementById\\(\"footer-year-static\"\\).textContent = new Date\\(\\).getFullYear\\(\\);</script>|México, <span class=\"footer-year\"></span>|g' {} \\\\;)"
+    ]
+  }
+}

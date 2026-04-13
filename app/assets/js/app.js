@@ -1,5 +1,12 @@
 // Main JavaScripts
 
+// Dynamic copyright year (for static embedded footers)
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.footer-year').forEach(function(el) {
+        el.textContent = new Date().getFullYear();
+    });
+});
+
 (function ($) {
 	'use strict';
 	

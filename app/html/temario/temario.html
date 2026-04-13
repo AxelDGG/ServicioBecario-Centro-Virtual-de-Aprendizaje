@@ -22,6 +22,46 @@
         <link href="../../assets/css/animate.min.css" rel="stylesheet">
         <link href="../../assets/css/app.css" rel="stylesheet">
 
+        <style>
+            .temario-card {
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+            }
+            .temario-card-img {
+                height: 180px;
+                background-size: cover;
+                background-position: center;
+                flex-shrink: 0;
+            }
+            .temario-card-img-empty {
+                background-color: #c8cdd8;
+            }
+            .temario-card-body {
+                background-color: #1a3a7c;
+                padding: 14px 16px;
+                flex: 1;
+            }
+            .temario-modulo-title {
+                color: #ffffff !important;
+                font-size: 16px !important;
+                margin-bottom: 4px;
+                line-height: 1.4;
+            }
+            .temario-modulo-desc {
+                color: #d0daf0 !important;
+                font-size: 13px !important;
+                line-height: 1.4;
+                margin-bottom: 0;
+            }
+            .temario-card:hover .temario-card-body {
+                background-color: #0d2a62;
+            }
+        </style>
     </head>
 
     <body class="header-info side-nav-dark">
@@ -50,70 +90,48 @@
                             <!-- Your content goes here -->
 
 
-                            <div class="row">
-                                <div class="col">
-                                    <div class="card temario">
-                                        <div class="card-block">
-                                            <div class="row">
-                                                <div class="col text-center">
-                                                    <h1 class="card-title">Temario General</h1>
-                                                </div>
-                                            </div>
-                                            <div class="mrg-top-20">
-                                                <!-- Beginning of images -->
-                                                <div class="row">
-                                                    <!-- Tema 1 -->
-                                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                                                        <a href="../modulo1/unidad1-1.html">
-                                                            <div class="card ">
-                                                                <div class="overlay-dark bg" style="background-image: url('../../assets/images/course/temario/computadora.jpg')">
-                                                                    <div class="card-block">
-                                                                        <div class="mrg-top-130">
-                                                                            <h1>Módulo 1</h1>
-                                                                            <h2>La Computadora</h2>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                            <div class="row mrg-btm-20">
+                                <div class="col-12 text-center mrg-btm-20">
+                                    <h1 class="card-title">Temario General</h1>
+                                </div>
 
-                                                    <!-- Tema 2 -->
-                                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                                                        <a href="../modulo2/unidad1-1.html">
-                                                            <div class="card ">
-                                                                <div class="overlay-dark bg" style="background-image: url('../../assets/images/course/temario/internet.jpg')">
-                                                                    <div class="card-block">
-                                                                        <div class="mrg-top-130">
-                                                                            <h1>Módulo 2</h1>
-                                                                            <h2>Internet</h2>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-
-                                                    <!-- Tema 3 -->
-                                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                                                        <a href="../modulo3/unidad1-1.html">
-                                                            <div class="card ">
-                                                                <div class="overlay-dark bg" style="background-image: url('../../assets/images/course/temario/prod.jpg')">
-                                                                    <div class="card-block">
-                                                                        <div class="mrg-top-130">
-                                                                            <h1>Módulo 3</h1>
-                                                                            <h2>Software de Productividad</h2>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- End of images -->
+                                <!-- Módulo 1 -->
+                                <div class="col-12 col-sm-4 mrg-btm-20">
+                                    <a href="../modulo1/unidad1-1.html" style="text-decoration:none;">
+                                        <div class="temario-card">
+                                            <div class="temario-card-img" style="background-image: url('../../assets/images/course/temario/computadora.jpg');"></div>
+                                            <div class="temario-card-body">
+                                                <p class="temario-modulo-title"><b>Módulo 1</b></p>
+                                                <p class="temario-modulo-desc">La Computadora</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
+                                </div>
+
+                                <!-- Módulo 2 -->
+                                <div class="col-12 col-sm-4 mrg-btm-20">
+                                    <a href="../modulo2/unidad1-1.html" style="text-decoration:none;">
+                                        <div class="temario-card">
+                                            <div class="temario-card-img" style="background-image: url('../../assets/images/course/temario/internet.jpg');"></div>
+                                            <div class="temario-card-body">
+                                                <p class="temario-modulo-title"><b>Módulo 2</b></p>
+                                                <p class="temario-modulo-desc">Internet</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Módulo 3 -->
+                                <div class="col-12 col-sm-4 mrg-btm-20">
+                                    <a href="../modulo3/unidad1-1.html" style="text-decoration:none;">
+                                        <div class="temario-card">
+                                            <div class="temario-card-img" style="background-image: url('../../assets/images/course/temario/prod.jpg');"></div>
+                                            <div class="temario-card-body">
+                                                <p class="temario-modulo-title"><b>Módulo 3</b></p>
+                                                <p class="temario-modulo-desc">Software de Productividad</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 

@@ -4,7 +4,7 @@ function getPreguntas() {
         
         // Get pregunta1
         let p1 = [];
-        $("input[type=checkbox][name=pregunta1]:checked").each(function() {
+        $("input[name=pregunta1]:checked").each(function() {
             p1.push($(this).attr("value"));
         });
 
@@ -20,7 +20,7 @@ function getPreguntas() {
 
         // Get pregunta2
         let p2 = [];
-        $("input[type=checkbox][name=pregunta2]:checked").each(function() {
+        $("input[name=pregunta2]:checked").each(function() {
             p2.push($(this).attr("value"));
         });
 
@@ -36,7 +36,7 @@ function getPreguntas() {
 
         // Get pregunta3
         let p3 = [];
-        $("input[type=checkbox][name=pregunta3]:checked").each(function() {
+        $("input[name=pregunta3]:checked").each(function() {
             p3.push($(this).attr("value"));
         });
 
@@ -52,7 +52,7 @@ function getPreguntas() {
 
         // Get pregunta4
         let p4 = [];
-        $("input[type=checkbox][name=pregunta4]:checked").each(function() {
+        $("input[name=pregunta4]:checked").each(function() {
             p4.push($(this).attr("value"));
         });
 
@@ -71,7 +71,7 @@ function getPreguntas() {
 
 function watchForm() {
     for (let i = 1; i <= 4; i++) {
-        $(`input[type=checkbox][name=pregunta${i}]`).on("change", function(event){
+        $(`input[name=pregunta${i}]`).on("change", function(event){
             $(`#ans${i}`).hide();
         });
     }

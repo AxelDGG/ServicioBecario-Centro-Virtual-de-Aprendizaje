@@ -4,7 +4,7 @@ function getPreguntas() {
         
         // Get pregunta1
         let p1 = [];
-        $("input[type=radio][name=pregunta1]:checked").each(function() {
+        $("input[name=pregunta1]:checked").each(function() {
             p1.push($(this).attr("value"));
         });
 
@@ -20,7 +20,7 @@ function getPreguntas() {
 
         // Get pregunta2
         let p2 = [];
-        $("input[type=radio][name=pregunta2]:checked").each(function() {
+        $("input[name=pregunta2]:checked").each(function() {
             p2.push($(this).attr("value"));
         });
 
@@ -36,7 +36,7 @@ function getPreguntas() {
 
         // Get pregunta3
         let p3 = [];
-        $("input[type=radio][name=pregunta3]:checked").each(function() {
+        $("input[name=pregunta3]:checked").each(function() {
             p3.push($(this).attr("value"));
         });
 
@@ -52,7 +52,7 @@ function getPreguntas() {
 
         // Get pregunta4
         let p4 = [];
-        $("input[type=radio][name=pregunta4]:checked").each(function() {
+        $("input[name=pregunta4]:checked").each(function() {
             p4.push($(this).attr("value"));
         });
 
@@ -68,7 +68,7 @@ function getPreguntas() {
 
         // Get pregunta5
         let p5 = [];
-        $("input[type=radio][name=pregunta5]:checked").each(function() {
+        $("input[name=pregunta5]:checked").each(function() {
             p5.push($(this).attr("value"));
         });
 
@@ -86,7 +86,7 @@ function getPreguntas() {
 
 function watchForm() {
     for (let i = 1; i <= 4; i++) {
-        $(`input[type=radio][name=pregunta${i}]`).on("change", function(event){
+        $(`input[name=pregunta${i}]`).on("change", function(event){
             $(`#ans${i}`).hide();
         });
     }
@@ -94,7 +94,7 @@ function watchForm() {
 
 function init() {
     getPreguntas();
-    watchForm();
+    // watchForm(); // Fixed: opciones no deben desaparecer al seleccionar
 }
 
 init();
