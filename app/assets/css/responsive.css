@@ -11,8 +11,9 @@
 
 img {
   max-width: 100%;
-  height: auto;
-  display: block;  /* evita el espacio inferior de inline */
+  height: auto !important;  /* anula atributos height="" del HTML */
+  width: auto;              /* permite que max-width tome el control */
+  display: block;           /* evita el espacio inferior de inline */
 }
 
 /* Imágenes inline pequeñas (íconos dentro de texto) */
@@ -353,4 +354,25 @@ video:not(.video-wrapper video) {
 .main-content,
 .container-fluid {
   overflow-x: hidden;
+}
+
+/* ─── 17. ATRIBUTOS HTML OBSOLETOS ──────────────────────────
+   Normaliza align="center/left/right" en elementos de contenido
+   para que funcionen igual que text-center/text-left.
+──────────────────────────────────────────────────────────── */
+
+p[align="center"], h1[align="center"], h2[align="center"],
+h3[align="center"], div[align="center"] {
+  text-align: center;
+}
+
+p[align="left"], h1[align="left"], h2[align="left"],
+h3[align="left"], div[align="left"] {
+  text-align: left;
+}
+
+/* Contenedores con align="center" que envuelven imágenes */
+div[align="center"] img {
+  margin-left: auto;
+  margin-right: auto;
 }
