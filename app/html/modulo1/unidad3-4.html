@@ -23,6 +23,7 @@
     <link href="../../assets/css/app.css" rel="stylesheet">
     <link href="../../assets/css/progress.css" rel="stylesheet">
     <link href="../../assets/css/progress-circle.css" rel="stylesheet">
+    <link href="../../assets/css/split-view.css" rel="stylesheet">
 
 </head>
 
@@ -70,6 +71,8 @@
                             
                             <form id="ejercicio">
                                 <fieldset>
+                                <div class="split-view" data-split-labels="Preguntas 1-5|Preguntas 6-10">
+                                <div class="split-pane">
                                 <!-- Multiple Checkboxes (inline) -->
                                 <div class="form-group">
                                   <label class="col control-label" for="pregunta1">1. Quitar el polvo de las entradas de aire del ventilador</label>
@@ -146,10 +149,12 @@
                                       <label class="checkbox-inline" for="pregunta5-1">
                                           <input type="radio" name="pregunta5" id="pregunta5-1" value="Software"> Software
                                       </label>
-                                    
+
 
                                     </div>
                                   </div>
+                                </div><!-- /split-pane 1 -->
+                                <div class="split-pane">
 
                                   <div class="form-group">
                                     <label class="col control-label" for="pregunta6">6. Limpiar el mouse y el teclado</label>
@@ -231,12 +236,14 @@
                                     </div>
                                   </div>
 
-                                  <div class="form-group row">
+                                </div><!-- /split-pane 2 -->
+                                </div><!-- /split-view -->
+                                <div class="form-group row">
                                     <div class="col" align="center">
                                       <button type="submit" class="button" >Revisar</button>
                                     </div>
                                   </div>
-                
+
                                 </fieldset>
                                 </form>
                         </div>
@@ -352,6 +359,9 @@
 
                                         <!-- Ejercicio JS -->
                                         <script src="../../assets/js/scripts/modulo1/unidad3-4.js"></script>
+
+                                        <!-- Split view -->
+                                        <script src="../../assets/js/split-view.js"></script>
                                         <!-- endbuild -->
 
                                         <!-- Insert your dependencies here -->

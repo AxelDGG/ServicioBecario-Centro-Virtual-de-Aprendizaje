@@ -23,6 +23,7 @@
         <link href="../../assets/css/app.css" rel="stylesheet">
         <link href="../../assets/css/progress.css" rel="stylesheet">
         <link href="../../assets/css/progress-circle.css" rel="stylesheet">
+        <link href="../../assets/css/split-view.css" rel="stylesheet">
 
     </head>
 
@@ -73,8 +74,10 @@
                                 <div class="card">
                                     <div class="card-block">
                                         <div class="row">
-                                            <form class="form-horizontal">
+                                            <form class="form-horizontal w-100">
                                                 <fieldset>
+                                                <div class="split-view" data-split-labels="Preguntas 1-3|Preguntas 4-6">
+                                                <div class="split-pane">
                                                 <!-- Multiple Radios -->
                                                 <div class="form-group">
                                                   <label class="col control-label" for="pregunta1"><strong>1. Instrucción que permite dar respuesta a un correo electrónico que se ha recibido; la respuesta sólo le llegará al remitente del mensaje.</strong></label>
@@ -152,7 +155,9 @@
                                                     </div>
                                                   </div>
                                                 </div>
-                                                
+                                                </div><!-- /split-pane 1 -->
+                                                <div class="split-pane">
+
                                                 <!-- Multiple Radios -->
                                                 <div class="form-group">
                                                   <label class="col control-label" for="pregunta4"><strong>4. Instrucción que se utiliza para hacer llegar el mensaje electrónico a su destinatario, una vez que se ha terminado de redactar.</strong></label>
@@ -230,7 +235,9 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                
+                                                </div><!-- /split-pane 2 -->
+                                                </div><!-- /split-view -->
+
                                                 </fieldset>
                                                 </form>
                                         </div>
@@ -336,6 +343,8 @@
         <!-- Ejercicio JS -->
         <script src="../../assets/js/scripts/modulo2/unidad2-10.js"></script>
 
+        <!-- Split view -->
+        <script src="../../assets/js/split-view.js"></script>
         <!-- endbuild -->
 
         <!-- Insert your dependencies here -->

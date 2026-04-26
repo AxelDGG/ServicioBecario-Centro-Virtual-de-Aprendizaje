@@ -1,0 +1,158 @@
+/* Split View — reduce scroll vertical en pantallas grandes,
+   pagina el contenido como pestañas en pantallas pequeñas. */
+
+.split-view {
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    min-width: 0;
+}
+
+
+.split-view__panes {
+    display: block;
+}
+
+.split-pane {
+    min-width: 0;
+}
+
+.split-view__nav,
+.split-view__controls {
+    display: none;
+}
+
+/* === Mobile / tablet (< 992 px): un panel a la vez === */
+@media (max-width: 991.98px) {
+    .split-view__nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 0.5rem;
+    }
+
+    .split-view__nav-btn {
+        flex: 1 1 auto;
+        min-width: 120px;
+        padding: 0.5rem 0.75rem;
+        background: transparent;
+        border: 1px solid #d6d6d6;
+        border-radius: 4px;
+        color: #555;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .split-view__nav-btn:hover {
+        border-color: #093b8b;
+        color: #093b8b;
+    }
+
+    .split-view__nav-btn.is-active {
+        background: #093b8b;
+        border-color: #093b8b;
+        color: #fff;
+    }
+
+    .split-pane {
+        display: none;
+    }
+
+    .split-pane.is-active {
+        display: block;
+        animation: split-fade-in 0.2s ease;
+    }
+
+    .split-view__controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid #e6e6e6;
+        gap: 0.75rem;
+    }
+
+    .split-view__ctrl-btn {
+        flex: 0 0 auto;
+        padding: 0.5rem 1rem;
+        background: #093b8b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: background 0.15s ease, opacity 0.15s ease;
+    }
+
+    .split-view__ctrl-btn:hover:not(:disabled) {
+        background: #062a66;
+    }
+
+    .split-view__ctrl-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
+
+    .split-view__indicator {
+        flex: 1 1 auto;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #777;
+        font-weight: 600;
+    }
+
+    @keyframes split-fade-in {
+        from { opacity: 0; transform: translateY(4px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}
+
+/* === Desktop (>= 992 px): dos columnas lado a lado === */
+@media (min-width: 992px) {
+    .split-view:not(.split-view--mobile-only) .split-view__panes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .split-view:not(.split-view--mobile-only) .split-view__panes > .split-pane {
+        min-width: 0;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .split-view:not(.split-view--mobile-only) .split-view__panes > .split-pane:first-child {
+        padding-left: 0;
+    }
+
+    .split-view:not(.split-view--mobile-only) .split-view__panes > .split-pane:last-child {
+        padding-right: 0;
+    }
+
+    /* Linea divisora azul entre paneles */
+    .split-view:not(.split-view--mobile-only) .split-view__panes > .split-pane + .split-pane {
+        border-left: 2px solid #093b8b;
+    }
+
+    /* Variante mobile-only: en desktop se comporta como contenido normal apilado */
+    .split-view--mobile-only .split-view__panes {
+        display: block;
+    }
+
+    .split-view--mobile-only .split-view__nav,
+    .split-view--mobile-only .split-view__controls {
+        display: none !important;
+    }
+
+    .split-view--mobile-only .split-pane {
+        display: block !important;
+    }
+}

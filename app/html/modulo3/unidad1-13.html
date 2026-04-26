@@ -23,6 +23,7 @@
     <link href="../../assets/css/app.css" rel="stylesheet">
     <link href="../../assets/css/progress.css" rel="stylesheet">
     <link href="../../assets/css/progress-circle.css" rel="stylesheet">
+    <link href="../../assets/css/split-view.css" rel="stylesheet">
 
 </head>
 
@@ -71,6 +72,8 @@
                             <div class="pdd-vertical-30 pdd-horizon-25">
                                 <form id="ejercicio">
                                     <fieldset>
+                                    <div class="split-view" data-split-labels="Preguntas 1-5|Preguntas 6-9">
+                                    <div class="split-pane">
                                     <!-- Multiple Checkboxes (inline) -->
                                     <div class="form-group">
                                       <label class="col control-label" for="pregunta1">1. A las herramientas más frecuentes se les llama: </label>
@@ -176,7 +179,9 @@
                                         </label>
                                         </div>
                                       </div>
-    
+                                    </div><!-- /split-pane 1 -->
+                                    <div class="split-pane">
+
                                       <div class="form-group">
                                         <label class="col control-label" for="pregunta6">6. En este menú encontramos la opción de cambiar el tipo de letra.</label>
                                         <div class="col">
@@ -261,14 +266,16 @@
                                         </div>
                                       </div>
     
-                                      <div class="form-group row">
+                                    </div><!-- /split-pane 2 -->
+                                    </div><!-- /split-view -->
+                                    <div class="form-group row">
                                         <div class="col" align="center">
                                           <button type="submit" class="button" >Revisar</button>
                                         </div>
                                       </div>
-                    
+
                                     </fieldset>
-                                    </form>   
+                                    </form>
                                 </div>
                             </div>
 
@@ -379,6 +386,9 @@
 
 <!-- Ejercicio JS -->
 <script src="../../assets/js/scripts/modulo3/unidad1-13.js"></script>
+
+<!-- Split view -->
+<script src="../../assets/js/split-view.js"></script>
 <!-- endbuild -->
 
 <!-- Insert your dependencies here -->

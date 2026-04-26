@@ -23,6 +23,7 @@
         <link href="../../assets/css/app.css" rel="stylesheet">
         <link href="../../assets/css/progress.css" rel="stylesheet">
         <link href="../../assets/css/progress-circle.css" rel="stylesheet">
+        <link href="../../assets/css/split-view.css" rel="stylesheet">
 
     </head>
 
@@ -77,6 +78,8 @@
                                             <div class="feed-body form-group">
                                                 <div class="row">
                                                     <div class="form-check" id="selectElem" style="color:black">
+                                                        <div class="split-view split-view--mobile-only" data-split-labels="Preguntas 1-5|Preguntas 6-9">
+                                                        <div class="split-pane">
                                                         <div>
                                                             <label class="form-check-label mb-2">
                                                                 <select id="Q1">
@@ -162,6 +165,8 @@
                                                                 Introducir un renglón o datos.
                                                             </label>
                                                         </div>
+                                                        </div><!-- /split-pane 1 -->
+                                                        <div class="split-pane">
                                                         <div>
                                                             <label class="form-check-label mb-2">
                                                                 <select id="Q6">
@@ -230,6 +235,8 @@
                                                                 Ir hacia arriba en un documento.
                                                             </label>
                                                         </div>
+                                                        </div><!-- /split-pane 2 -->
+                                                        </div><!-- /split-view -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -345,6 +352,8 @@
         <!-- Ejercicio JS -->
         <script src="../../assets/js/scripts/modulo1/unidad2-9.js"></script>
 
+        <!-- Split view -->
+        <script src="../../assets/js/split-view.js"></script>
         <!-- endbuild -->
 
         <!-- Insert your dependencies here -->

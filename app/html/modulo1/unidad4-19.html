@@ -23,6 +23,7 @@
     <link href="../../assets/css/app.css" rel="stylesheet">
     <link href="../../assets/css/progress.css" rel="stylesheet">
     <link href="../../assets/css/progress-circle.css" rel="stylesheet">
+    <link href="../../assets/css/split-view.css" rel="stylesheet">
 
 </head>
 
@@ -76,6 +77,8 @@
                         </p>
                         <form id="ejercicio">
                             <fieldset>
+                            <div class="split-view" data-split-labels="Preguntas 1-3|Preguntas 4-6">
+                            <div class="split-pane">
                             <!-- Multiple Checkboxes (inline) -->
                             <div class="form-group">
                               <label class="col control-label" for="pregunta1">Hubs</label>
@@ -156,10 +159,12 @@
                                 <label class="radio-inline" for="pregunta3-5">
                                     <input type="radio" name="pregunta3" id="pregunta3-5" value="5"> 6
                                 </label>
-                            
+
 
                                 </div>
                               </div>
+                            </div><!-- /split-pane 1 -->
+                            <div class="split-pane">
 
                               <div class="form-group">
                                 <label class="col control-label" for="pregunta4">Routers</label>
@@ -245,14 +250,16 @@
                                 </div>
                               </div>
 
-                              <div class="form-group row">
+                            </div><!-- /split-pane 2 -->
+                            </div><!-- /split-view -->
+                            <div class="form-group row">
                                 <div class="col" align="center">
                                   <button type="submit" class="button" >Revisar</button>
                                 </div>
                               </div>
-            
+
                             </fieldset>
-                            </form>   
+                            </form>
                     </div>
                 </div>
 
@@ -363,6 +370,9 @@
                                                                             
                                                                             <!-- Ejercicio JS -->
                                                                             <script src="../../assets/js/scripts/modulo1/unidad4-19.js"></script>
+
+                                                                            <!-- Split view -->
+                                                                            <script src="../../assets/js/split-view.js"></script>
                                                                             <!-- endbuild -->
 
                                                                             <!-- Insert your dependencies here -->

@@ -23,6 +23,7 @@
     <link href="../../assets/css/app.css" rel="stylesheet">
     <link href="../../assets/css/progress.css" rel="stylesheet">
     <link href="../../assets/css/progress-circle.css" rel="stylesheet">
+    <link href="../../assets/css/split-view.css" rel="stylesheet">
 
 </head>
 
@@ -81,6 +82,8 @@
                     <div class="pdd-vertical-30 pdd-horizon-25">
                         <form id="ejercicio">
                             <fieldset>
+                            <div class="split-view" data-split-labels="Preguntas 1-3|Preguntas 4-5">
+                            <div class="split-pane">
                             <!-- Multiple Checkboxes (inline) -->
                             <div class="form-group">
                               <label class="col control-label" for="pregunta1">Salto de página</label>
@@ -153,6 +156,8 @@
                                 </label>
                                 </div>
                               </div>
+                            </div><!-- /split-pane 1 -->
+                            <div class="split-pane">
 
                               <div class="form-group">
                                 <label class="col control-label" for="pregunta4">Buscar y remplazar texto</label>
@@ -201,13 +206,15 @@
                                 </label>
                                 </div>
                               </div>
+                            </div><!-- /split-pane 2 -->
+                            </div><!-- /split-view -->
 
                               <div class="form-group row">
                                 <div class="col" align="center">
                                   <button type="submit" class="button" >Revisar</button>
                                 </div>
                               </div>
-            
+
                             </fieldset>
                             </form>                                        
                     </div>
@@ -321,6 +328,9 @@
 
 <!-- Ejercicio JS -->
 <script src="../../assets/js/scripts/modulo3/unidad2-14.js"></script>
+
+<!-- Split view -->
+<script src="../../assets/js/split-view.js"></script>
 <!-- endbuild -->
 
 <!-- Insert your dependencies here -->
