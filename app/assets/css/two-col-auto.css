@@ -1,0 +1,112 @@
+/* Layout automatico de 2 columnas para .card altas (solo desktop >= 992px).
+   Activado por JS (two-col-auto.js) que mide el alto del card y agrega
+   la clase .card--two-col cuando supera el umbral. La altura --two-col-height
+   se inyecta inline desde el JS para forzar fill-left-first. */
+
+@media (min-width: 992px) {
+    .card.card--two-col > .pdd-vertical-30,
+    .card.card--two-col > .pdd-vertical-15,
+    .card.card--two-col > .pdd-horizon-25,
+    .card.card--two-col > .card-block,
+    .card.card--two-col > .card-body,
+    .card.card--two-col > form,
+    .card.card--two-col > .card-block > form {
+        column-count: 2;
+        column-gap: 2.5rem;
+        column-rule: 1px solid #e6e6e6;
+        /* Llenar la columna izquierda primero hasta --two-col-height; el
+           contenido restante pasa a la derecha. Sin esto el navegador
+           "balancea" y a veces empuja todo a la derecha. */
+        column-fill: auto;
+        height: var(--two-col-height, auto);
+    }
+
+    /* Bloque suelto .two-col-content: usamos column-fill balanceado
+       (default) para que el navegador reparta los items en 2 columnas
+       sin altura fija. Asi se evita una tercera columna por overflow. */
+    .two-col-content {
+        column-count: 2;
+        column-gap: 2.5rem;
+        column-rule: 1px solid #e6e6e6;
+    }
+
+    /* Mismas protecciones de break/img dentro de un .two-col-content
+       suelto (ej. para aplicar 2 cols a un bloque puntual sin afectar
+       el resto del card). */
+    .two-col-content img,
+    .two-col-content video,
+    .two-col-content iframe,
+    .two-col-content h1,
+    .two-col-content h2,
+    .two-col-content h3,
+    .two-col-content h4,
+    .two-col-content table,
+    .two-col-content blockquote,
+    .two-col-content figure,
+    .two-col-content .form-group,
+    .two-col-content .radio-inline,
+    .two-col-content > div {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        -webkit-column-break-inside: avoid;
+    }
+    .two-col-content img,
+    .two-col-content video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Titulos principales abarcan las dos columnas y van centrados arriba */
+    .card.card--two-col h1,
+    .card.card--two-col .card-title,
+    .card.card--two-col h2 {
+        column-span: all;
+        -webkit-column-span: all;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    /* La barra de tabs queda como header de ancho completo, no dentro
+       de una sola columna. Esto deja el contenido del tab activo libre
+       para distribuirse entre las dos columnas debajo. */
+    .card.card--two-col .nav-tabs {
+        column-span: all;
+        -webkit-column-span: all;
+    }
+
+    /* Evitar que elementos visuales se partan a la mitad entre columnas */
+    .card.card--two-col img,
+    .card.card--two-col video,
+    .card.card--two-col iframe,
+    .card.card--two-col .background-holder,
+    .card.card--two-col h1,
+    .card.card--two-col h2,
+    .card.card--two-col h3,
+    .card.card--two-col h4,
+    .card.card--two-col .nav-tabs,
+    .card.card--two-col table,
+    .card.card--two-col blockquote,
+    .card.card--two-col figure,
+    .card.card--two-col .form-group,
+    .card.card--two-col .radio-inline {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        -webkit-column-break-inside: avoid;
+    }
+
+
+    .card.card--two-col img,
+    .card.card--two-col video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+}
+
+/* Opt-out explicito en cards donde la composicion no debe partirse */
+.card.card--no-two-col,
+.card.card--no-two-col > * {
+    column-count: 1 !important;
+    height: auto !important;
+}

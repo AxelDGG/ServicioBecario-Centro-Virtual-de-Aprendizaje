@@ -16,6 +16,27 @@ function getPath(){
     return res;
 }
 
+// Inyecta el CSS y el JS del layout automatico de 2 columnas en todas las
+// paginas que cargan navigationbar.js. De esta forma no hay que tocar los
+// ~197 archivos HTML de unidades.
+(function injectTwoColAuto(){
+    var base = getPath();
+    if (!document.querySelector('link[data-two-col-auto]')) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = base + 'assets/css/two-col-auto.css';
+        link.setAttribute('data-two-col-auto', '1');
+        document.head.appendChild(link);
+    }
+    if (!document.querySelector('script[data-two-col-auto]')) {
+        var script = document.createElement('script');
+        script.src = base + 'assets/js/two-col-auto.js';
+        script.defer = true;
+        script.setAttribute('data-two-col-auto', '1');
+        document.head.appendChild(script);
+    }
+})();
+
 $(document).ready(function(){
     //file with relative path to index outside html folder
     $.get(getPath()+"assets/js/recycled/NavBar.html", function(html_string){
