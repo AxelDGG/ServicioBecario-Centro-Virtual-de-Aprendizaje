@@ -16,10 +16,14 @@ function getPath(){
     return res;
 }
 
-// Inyecta el CSS y el JS del layout automatico de 2 columnas en todas las
-// paginas que cargan navigationbar.js. De esta forma no hay que tocar los
-// ~197 archivos HTML de unidades.
+// Inyecta el CSS y el JS del layout automatico de 2 columnas SOLO en paginas
+// dentro de modulos/unidades (URL contiene "/modulo"). El resto de paginas
+// (index, creditos, temario, contacto, politicas, objetivos, metodologia,
+// mapa-conceptual) usa layout de 1 columna.
 (function injectTwoColAuto(){
+    var path = window.location.pathname.toLowerCase();
+    if (path.indexOf('/modulo') === -1) return;
+
     var base = getPath();
     if (!document.querySelector('link[data-two-col-auto]')) {
         var link = document.createElement('link');

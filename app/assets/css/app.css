@@ -20,7 +20,7 @@
   --theme-color: #093b8b;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 html, html a, body { -webkit-font-smoothing: antialiased; }
 
 body { font-family: 'Lato', sans-serif; font-size: 14px; background-color: #f6f7fb; color: #888da8; line-height: 1.5; letter-spacing: 0.2px; overflow-x: hidden; }
@@ -73,9 +73,9 @@ a.text-gray:hover, a.text-gray:focus, a.text-gray.active { color: #515365 !impor
 
 hr { border-top: 1px solid #e6ecf5; }
 
-.font-primary { font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+.font-primary { font-family: 'Lato', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
 
-.font-secondary { font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+.font-secondary { font-family: 'Fira Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
 
 .text-link:hover, .text-link:focus { text-decoration: underline; }
 
@@ -1713,9 +1713,9 @@ iframe { border: 0; }
 
 .content-footer p {color: #fff; font-weight: bold; margin: 0; font-size: 12px}
 
-.content-footer a {font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #2E70BA; line-height: 1.9; font-size: 12px; font-weight: bold}
+.content-footer a {font-family:  'Lato', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #2E70BA; line-height: 1.9; font-size: 12px; font-weight: bold}
 
-.content-footer span {font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: rgb(255, 255, 255); line-height: 1.9; font-size: 12px; font-weight: bold}
+.content-footer span {font-family:  'Lato', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: rgb(255, 255, 255); line-height: 1.9; font-size: 12px; font-weight: bold}
 
 .content-footer .footer .go-right { float: right; }
 
@@ -2360,7 +2360,7 @@ button:active:focus { outline: none; box-shadow: none; }
 
 button.disabled, button:disabled { opacity: 0.5; cursor: not-allowed; }
 
-.btn { cursor: pointer; font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: 1px; font-size: 13px; padding: 10px 20px; border-radius: 6px; margin-right: 5px; margin-bottom: 10px; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
+.btn { cursor: pointer; font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: 1px; font-size: 1rem; padding: 10px 20px; border-radius: 6px; margin-right: 5px; margin-bottom: 10px; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
 
 .btn.dropdown-toggle { margin-bottom: 0px; }
 
@@ -2580,7 +2580,7 @@ button.disabled, button:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .btn-pinterest:hover, .btn-pinterest:focus { background-color: #e7373e; border-color: #e7373e; color: #ffffff; }
 
-.btn-lg, .btn-group-lg > .btn { padding: 11px 30px; font-size: 13px; }
+.btn-lg, .btn-group-lg > .btn { padding: 11px 30px; font-size: 1.125rem; }
 
 .btn-sm, .btn-group-sm > .btn { padding: 7px 12px; }
 
@@ -2968,7 +2968,7 @@ label.success { color: #37c936; }
 
 .portlet .show .dropdown-menu { transform: scale(1, 1); -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -o-transform: scale(1, 1); -ms-transform: scale(1, 1); }
 
-.card-title { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--theme-color); margin-top: 0px; margin-bottom: 15px; }
+.card-title { font-family: 'Fira Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--theme-color); margin-top: 0px; margin-bottom: 15px; }
 
 .card-image-title {color: var(--theme-color)}
 
@@ -3671,7 +3671,7 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   transition: all 150ms ease-in-out;
   display: table;
 }
@@ -3707,7 +3707,7 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
   padding: 1em 2.6em;
   text-decoration: none;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 350;
 
   border-color: var(--theme-color);
@@ -3742,7 +3742,7 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
   padding: 1em 2.6em;
   text-decoration: none;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 350;
 
   border-color: var(--theme-color);
@@ -3805,7 +3805,7 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
 }
 
 /*-- Para el carousel de librito de cursos de DP --*/
-.credits-title { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--theme-color); margin-top: 0px; line-height: 25px; }
+.credits-title { font-family: 'Fira Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--theme-color); margin-top: 0px; line-height: 25px; }
 
 /*-- Para los botones de creditos --*/
 .btn-credits { background-color: var(--theme-color); border-color: var(--theme-color); color: #ffffff; }
@@ -4205,4 +4205,7 @@ video {
     -webkit-overflow-scrolling: touch;
   }
 }
+
+/* ---- Card titles del index usan Lato (override de la regla base en Fira Sans) ---- */
+body.index-page .card-title { font-family: 'Lato', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 2.5em; }
 

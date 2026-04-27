@@ -3,8 +3,10 @@
 //==================================
 
 
-$font-primary:            Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;         // Primary font: Roboto
-$font-secondary:          Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;         // Secondary font: Montserrat
+$font-primary:            'Lato', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;          // Primary font: Lato
+$font-secondary:          'Fira Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;     // Secondary font: Fira Sans
+$font-link-heading:       'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;        // Links inside h1-h6
+$font-cta:                'Montserrat', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;    // CTA buttons
 
 
 //==================================
